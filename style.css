@@ -1,0 +1,176 @@
+html{
+    font-family: "Sora"
+}
+
+:root{
+    --color: #e95656;
+}
+p{
+    text-align: center;
+    font-family: "Sora";
+    font-weight: 700;
+    font-size: 16px;
+    text-decoration: none solid rgb(31,33,36);
+    
+}
+#navbar{
+    top: 0;
+    display: flex;
+    justify-content: center;
+    background-color: var(--color);
+    color: rgb(255, 255, 255);
+    width: 100%;
+    height: 10%;
+    position: sticky;
+    position: -webkit-sticky;
+}
+
+body{
+    width: 100%;
+    margin: 0;
+    background-color:#ffdada;
+}
+#drinkdescription{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 5vh;
+    height:80vh;
+    flex-wrap: wrap;
+    
+}
+
+#main{
+    font-family: "Sora";
+    font-size: 7vw;
+}
+
+#intake{
+    font-family: "Sora";
+    font-size: 8vw;
+    color: var(--color);
+    font-weight: bold;
+    
+}
+
+.cup {
+    
+    
+    width: 150px;
+    height: 180px;
+    border: 6px solid #262626;
+    border-top: 2px solid transparent;
+    border-radius: 15px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    background: url(https://image.ibb.co/fmHm66/wave.png);
+    background-position: 0px 350px;
+    background-repeat: repeat-x;
+    animation: filling 10s ease-in-out infinite;
+    box-shadow: 0 0 0 6px #fff, 0 20px 35px rgba(0,0,0,1);
+    margin-bottom: 1vh;
+    
+}
+
+  
+@keyframes filling {
+    50% {background-position: 3000px 0px;}
+    100% {background-position: 6000px 350px;}
+}
+
+#cupholder{
+    width: 100%;
+    margin-top: 200px;
+    height:30vh;
+    display: flex;
+    padding-top: 100px;
+    padding-bottom: 80px;
+    justify-content: center;
+    align-items:center;
+    margin-bottom: 5vh;
+    flex-direction: column;
+}
+
+#changeamount{
+    margin-top: 5vh;
+    width: 100%;
+    height: 30vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#change{
+    font-size: 4vw;
+}
+
+.input{
+    margin-bottom: 10px;
+    width: 50px;
+    align-content: center;
+    height: 45px;
+    border: 2px solid var(--color);
+    text-align: center;
+}
+
+#changenumber{
+    display: none;
+}
+
+#submit{
+    display: none;
+}
+
+.but{
+    font-family: "Sora";
+    font-weight: bold;
+    color:var(--color);
+    background: rgba(255,255,255,0);
+    padding: 15px 32px;
+    cursor: pointer;
+    border: 2px solid var(--color);
+}
+
+.but:hover{
+    background: var(--color);
+    color: white;
+}
+
+.secret{
+    width: 100%;
+    height: 50vw;
+    margin-top: 6vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#secretinput{
+    width: 10vw;
+}
+
+#safeTimerDisplay{
+    font-size: 8vw;
+}
+
+#Speler{
+    font-size: 7vw;
+}
+
+#timerstart{
+    margin-bottom: 1vh;
+}
+#timerstart2{
+    margin-bottom: 1vh;
+}
+
+#secretflip{
+    display: none;
+}
+
+#secret{
+    visibility: inherit;
+}

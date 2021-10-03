@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>MySip</title>
+        <meta name="description" content="This is the official website for the MySip cup!">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css?family=Sora" rel="stylesheet">
+    </head>
+    <body>
+        <div id="navbar" class="colorchange">
+            <p>This is the official website for the MySip cup</p>
+        </div>
+        <div id="drinkdescription">
+            <h1 id="main">Your fluid intake is</h1>
+            <span id="intake" class="colorchange">LOW</span>
+        </div>
+        <div id="cupholder">
+            <div class="cup"></div>
+            <h1 id="cupcounter">0</h1>
+        </div>
+        <div id="changeamount">
+            <h1 id="change">Change the amount you want to drink today</h1>
+            <input type="number" id="changenumber" class="input" name="goaldrinks" placeholder="8" min="1">
+            <button id="changebut" class="but" onclick="change()">HERE</button>
+            <button id="submit" class="but" onclick="submit()">SUBMIT</button>
+        </div>
+        <div id="secret" class="secret">
+            <input type="text" id="secretinput" name="secretinput" class="input" placeholder="Password">
+            <button id="submit2" class="but" onclick="checkpass()">SUBMIT</button>
+        </div>
+        <div id="secretflip" class="secret">
+            <h1 id="Speler">Wat voor speler ben jij?</h1>
+            <button id="timerstart" onclick="timertrigger(30)" class="but">Klein</button>
+            <button id="timerstart2" onclick="timertrigger(15)" class="but">Medium</button>
+            <button id="timerstart3" onclick="timertrigger(5)" class="but">Groot</button>
+            <h1 id="safeTimerDisplay">00:0</h2>
+        </div>
+
+        
+    </body>
+    <script src="intakechange.js"></script>
+
+</html>
