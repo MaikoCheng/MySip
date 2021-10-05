@@ -63,10 +63,16 @@ function checkpass(){
 }
 
 function timertrigger(sec){
+    document.getElementById("timerstart").style.display = "none";
+    document.getElementById("timerstart2").style.display = "none";
+    document.getElementById("timerstart3").style.display = "none";
     var timer = setInterval(function(){
         document.getElementById('safeTimerDisplay').innerHTML='00:'+sec;
         sec--;
         if (sec < 0) {
+            document.getElementById("timerstart").style.display = "flex";
+            document.getElementById("timerstart2").style.display = "flex";
+            document.getElementById("timerstart3").style.display = "flex";
             clearInterval(timer);
         }
     }, 1000);
