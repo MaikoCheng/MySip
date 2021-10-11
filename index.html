@@ -11,31 +11,46 @@
     </head>
     <body>
         <div id="navbar" class="colorchange">
-            <p>This is the official website for the MySip cup</p>
+            <div id="welcome">
+                <p>This is the official website for the MySip cup</p>
+            </div>
+            <a href="about.html" id="a">
+                <div id="aboutpage">
+                  <p>About</p>
+                </div>
+            </a>
         </div>
+        
         <div id="drinkdescription">
             <h1 id="main">Your fluid intake is</h1>
             <span id="intake" class="colorchange">LOW</span>
         </div>
-        <div id="cupholder">
-            <div class="cup"></div>
-            <h1 id="cupcounter">0</h1>
+        <div id="amountchange">
+            <div id="changeamount">
+                <h1 id="change">Choose the amount of cups you want to drink today</h1>
+                <input type="number" id="changenumber" class="input" name="goaldrinks" placeholder="8" min="1">
+                <button id="changebut" class="but" onclick="change()">HERE</button>
+                <button id="submit" class="but" onclick="submit()">SUBMIT</button>
+            </div>
+            <div id="cupholder">
+                <div class="cup"></div>
+                <h1 id="cupcounter">0</h1>
+            </div>
         </div>
-        <div id="changeamount">
-            <h1 id="change">Change the amount you want to drink today</h1>
-            <input type="number" id="changenumber" class="input" name="goaldrinks" placeholder="8" min="1">
-            <button id="changebut" class="but" onclick="change()">HERE</button>
-            <button id="submit" class="but" onclick="submit()">SUBMIT</button>
-        </div>
+
+        <div id="water_widget_code"></div>
+        
+
+        
         <div id="secret" class="secret">
             <input type="text" id="secretinput" name="secretinput" class="input" placeholder="Password">
             <button id="submit2" class="but" onclick="checkpass()">SUBMIT</button>
         </div>
         <div id="secretflip" class="secret">
-            <h1 id="Speler">Wat voor speler ben jij?</h1>
-            <button id="timerstart" onclick="timertrigger(10)" class="but">Klein</button>
-            <button id="timerstart2" onclick="timertrigger(5)" class="but">Medium</button>
-            <button id="timerstart3" onclick="timertrigger(3)" class="but">Groot</button>
+            <h1 id="Speler">What kind of "Speler" are you?</h1>
+            <button id="timerstart" onclick="timertrigger(30)" class="but">Klein</button>
+            <button id="timerstart2" onclick="timertrigger(15)" class="but">Medium</button>
+            <button id="timerstart3" onclick="timertrigger(5)" class="but">Groot</button>
             <h1 id="safeTimerDisplay">00:0</h2>
         </div>
 

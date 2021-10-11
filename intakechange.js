@@ -20,17 +20,20 @@ function submit(){
         document.documentElement.style.setProperty("--color","#e95656")
         document.getElementById("navbar").style.color="white";
         document.body.style.backgroundColor="#ffdada";
+        document.getElementById("a").style.color = "white";
         document.getElementById("intake").textContent = "LOW";
     }else if (cupssipped>goalamount/2 && cupssipped < (goalamount)){
         document.documentElement.style.setProperty("--color","#e8d900")
         document.getElementById("navbar").style.color="black";
         document.body.style.backgroundColor="#fffccc";
         document.getElementById("intake").textContent = "AVERAGE";
+        document.getElementById("a").style.color = "black";
     }else{
         document.documentElement.style.setProperty("--color","green")
         document.getElementById("navbar").style.color="white";
         document.body.style.backgroundColor="#daffdc";
         document.getElementById("intake").textContent = "GOOD";
+        document.getElementById("a").style.color = "white";
     }
     
 }
@@ -63,17 +66,17 @@ function checkpass(){
 }
 
 function timertrigger(sec){
-    document.getElementById("timerstart").style.display = "none";
-    document.getElementById("timerstart2").style.display = "none";
-    document.getElementById("timerstart3").style.display = "none";
     var timer = setInterval(function(){
         document.getElementById('safeTimerDisplay').innerHTML='00:'+sec;
+        document.getElementById("timerstart").style.visibility = "hidden";
+        document.getElementById("timerstart2").style.visibility = "hidden";
+        document.getElementById("timerstart3").style.visibility = "hidden";
         sec--;
         if (sec < 0) {
-            document.getElementById("timerstart").style.display = "flex";
-            document.getElementById("timerstart2").style.display = "flex";
-            document.getElementById("timerstart3").style.display = "flex";
             clearInterval(timer);
+            document.getElementById("timerstart").style.visibility = "visible";
+        document.getElementById("timerstart2").style.visibility = "visible";
+        document.getElementById("timerstart3").style.visibility = "visible";
         }
     }, 1000);
 }
