@@ -18,22 +18,28 @@ function submit(){
     goalamount = document.getElementById("changenumber").value;
     if (cupssipped <= goalamount/2){
         document.documentElement.style.setProperty("--color","#e95656")
+        document.getElementById("waterbg").style.backgroundImage = "linear-gradient(60deg, #ffdada 0%, #ff5f5f 100%)";
         document.getElementById("navbar").style.color="white";
-        document.body.style.backgroundColor="#ffdada";
         document.getElementById("a").style.color = "white";
         document.getElementById("intake").textContent = "LOW";
+        document.getElementById("main").style.color = "white";
+        document.getElementById("changeamount").style.backgroundColor = "#ffdada"
     }else if (cupssipped>goalamount/2 && cupssipped < (goalamount)){
         document.documentElement.style.setProperty("--color","#e8d900")
+        document.getElementById("waterbg").style.backgroundImage = "linear-gradient(60deg, #fffccc 0%, #fff458 100%)";
         document.getElementById("navbar").style.color="black";
-        document.body.style.backgroundColor="#fffccc";
         document.getElementById("intake").textContent = "AVERAGE";
+        document.getElementById("main").style.color = "black";
         document.getElementById("a").style.color = "black";
+        document.getElementById("changeamount").style.backgroundColor = "#fffccc"
     }else{
         document.documentElement.style.setProperty("--color","green")
         document.getElementById("navbar").style.color="white";
-        document.body.style.backgroundColor="#daffdc";
         document.getElementById("intake").textContent = "GOOD";
         document.getElementById("a").style.color = "white";
+        document.getElementById("main").style.color = "white";
+        document.getElementById("waterbg").style.backgroundImage = "linear-gradient(60deg, #daffdc 0%, #53ff5b 100%)";
+        document.getElementById("changeamount").style.backgroundColor = "#daffdc"
     }
     
 }
@@ -43,19 +49,28 @@ if (currenthour == 0 && currentsecond == 0 && currenttime == 0){
 }
 if (cupssipped <= goalamount/2){
     document.documentElement.style.setProperty("--color","#e95656")
+    document.getElementById("waterbg").style.backgroundImage = "linear-gradient(60deg, #ffdada 0%, #ff5f5f 100%)";
     document.getElementById("navbar").style.color="white";
-    document.body.style.backgroundColor="#ffdada";
+    document.getElementById("a").style.color = "white";
     document.getElementById("intake").textContent = "LOW";
+    document.getElementById("main").style.color = "white";
+    document.getElementById("changeamount").style.backgroundColor = "#ffdada"
 }else if (cupssipped>goalamount/2 && cupssipped < (goalamount)){
     document.documentElement.style.setProperty("--color","#e8d900")
+    document.getElementById("waterbg").style.backgroundImage = "linear-gradient(60deg, #fffccc 0%, #fff458 100%)";
     document.getElementById("navbar").style.color="black";
-    document.body.style.backgroundColor="#fffccc";
     document.getElementById("intake").textContent = "AVERAGE";
+    document.getElementById("main").style.color = "black";
+    document.getElementById("a").style.color = "black";
+    document.getElementById("changeamount").style.backgroundColor = "#fffccc"
 }else{
     document.documentElement.style.setProperty("--color","green")
     document.getElementById("navbar").style.color="white";
-    document.body.style.backgroundColor="#daffdc";
     document.getElementById("intake").textContent = "GOOD";
+    document.getElementById("a").style.color = "white";
+    document.getElementById("main").style.color = "white";
+    document.getElementById("waterbg").style.backgroundImage = "linear-gradient(60deg, #daffdc 0%, #53ff5b 100%)";
+    document.getElementById("changeamount").style.backgroundColor = "#daffdc"
 }
 
 function checkpass(){

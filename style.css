@@ -34,6 +34,7 @@ a{
     height: 10%;
     position: sticky;
     position: -webkit-sticky;
+    z-index: 100;
 }
 
 #navbar2{
@@ -124,6 +125,8 @@ body{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    background-color:#daffdc;
+    border-radius: 25px;
 }
 
 #change{
@@ -207,6 +210,7 @@ body{
 }
 
 #amountchange{
+  margin-top: 5vh;
     display: flex;
     align-items: center;
     padding-left: 100px;
@@ -384,6 +388,10 @@ body{
     background: linear-gradient(60deg, rgba(84,58,183,1) 0%, rgba(0,172,193,1) 100%);
     color:white;
   }
+
+  #waterbg{
+    background: linear-gradient(60deg, #daffdc 0%, #53ff5b 100%)
+  }
   .logo {
     width:50px;
     fill:white;
@@ -466,4 +474,12 @@ body{
   }
 .name{
     color:white;
+}
+
+#aboutdesign{
+  display: flex;
+  align-items: center;
+  padding-left: 100px;
+  padding-right: 100px;
+
 }
