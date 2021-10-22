@@ -244,6 +244,7 @@ body{
   }
 
 #water_intake{
+  margin-top: 20vh;
     display: flex;
     justify-content: center;
 }
