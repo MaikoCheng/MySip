@@ -82,7 +82,7 @@ function checkpass(){
 
 function timertrigger(sec){
     var timer = setInterval(function(){
-        document.getElementById('safeTimerDisplay').innerHTML='00:'+sec;
+        document.getElementById('safeTimerDisplay').innerHTML=sec;
         document.getElementById("timerstart").style.visibility = "hidden";
         document.getElementById("timerstart2").style.visibility = "hidden";
         document.getElementById("timerstart3").style.visibility = "hidden";
