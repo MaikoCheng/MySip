@@ -477,10 +477,39 @@ body{
     color:white;
 }
 
-#aboutdesign{
+.aboutdesign{
   display: flex;
-  align-items: center;
+  align-items: left;
+  flex-direction: column;
   padding-left: 100px;
   padding-right: 100px;
 
+}
+
+.linevert{
+  height: 5px;
+  background-color: black;
+  color:black;
+  width:500px;
+  border-radius: 5px;
+}
+
+.question{
+  width:700px;
+}
+
+.link{
+  font-family: "Sora";
+  font-weight: 700;
+  font-size: 24px;
+  text-decoration: underline;
+  color:black;
+}
+
+.link:hover{
+  color:red;
+}
+
+.standout{
+  color: red;
 }
