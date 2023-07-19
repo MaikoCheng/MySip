@@ -2,7 +2,7 @@ let daytoday = new Date();
 let currenttime = daytoday.getMinutes();
 let currenthour = daytoday.getHours();
 let currentsecond = daytoday.getSeconds();
-let cupssipped = 8;
+let cupssipped = 6;
 let goalamount = 8;
 
 function change(){
